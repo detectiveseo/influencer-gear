@@ -122,6 +122,7 @@ header .header-icons i{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+    cursor: pointer;
 }
 .product{
     padding: 15px;
