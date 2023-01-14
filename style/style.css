@@ -1,0 +1,154 @@
+/*===============================
+ Font Added from google font
+================================= */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&family=Work+Sans:ital,wght@0,200;0,400;0,800;0,900;1,900&display=swap');
+/*++++++++++++++++++++++++++++++++++++++++++++
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Work Sans', sans-serif;
++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*===============================
+ Some Common Style in this section
+================================= */
+*{
+    font-family:'Work Sans', sans-serif;
+}
+body{
+    padding: 50px 320px;
+    margin: 0;
+}
+button{
+    font-size: 16px;
+    color: #fff;
+    background-color: #E02C6D;
+    padding: 20px;
+    border: transparent;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+/*===============================
+ Header Style from here started
+================================= */
+header {
+    display: flex;
+    justify-content: space-between;
+}
+header h1{
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 700;
+}
+header ul{
+    display: flex;
+}
+header ul li{
+    list-style: none;
+    padding-right: 34px;
+}
+header ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+header .header-icons i{
+    padding-right: 34px;
+}
+
+/*===============================
+    main body style from here
+================================= */
+
+
+/*===============================
+            hero section
+================================= */
+.hero{
+    display: flex;
+    align-items: center;
+    margin: 100px 0px;
+}
+.hero>div{
+    width: 50%;
+}
+.hero-title{
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 70px;
+    color: #3A3A3A;
+    margin: 0;
+}
+.hero-subtitle{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #3A3A3A;
+}
+.hero-button{
+    border-radius: 30px;
+}
+
+.hero-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/*===============================
+         promote section
+================================= */
+.promoter{
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #3a3a3a13;
+    border-bottom: 1px solid #3a3a3a13;
+    padding: 20px 0px;
+    border-radius: 30px;
+    margin-bottom: 60px;
+}
+/*===============================
+         collections section
+================================= */
+.products-top-title{
+    text-align: center;
+    font-size: 28px;
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.product{
+    padding: 15px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+.product img{
+    width: 100%;
+}
+.product .price{
+    font-size: 24px;
+}
+/*===============================
+        pre-footer section
+================================= */
+.pre-footer{
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    margin-top: 60px;
+}
+.pre-footer h1{
+    font-size: 38px;
+    font-weight: 700;
+}
+.pre-footerp{
+    color: #6c6c6c;
+    font-weight: 700;
+    line-height: 28px;
+}
