@@ -13,10 +13,13 @@
 *{
     font-family:'Work Sans', sans-serif;
 }
+body{
+    margin: 0px;
+}
 .container{
     padding: 50px 320px;
-    margin: 0;
 }
+
 button{
     font-size: 16px;
     color: #fff;
@@ -27,17 +30,20 @@ button{
     line-height: 24px;
 }
 
+
 /*===============================
  Header Style from here started
 ================================= */
 header {
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 header h1{
     font-size: 24px;
     line-height: 36px;
     font-weight: 700;
+    margin: 10px;
 }
 header ul{
     display: flex;
@@ -55,6 +61,9 @@ header ul li a{
 }
 header .header-icons i{
     padding-right: 34px;
+}
+.mobile-menu, .mobile-nav{
+    display: none;
 }
 
 /*===============================
@@ -172,3 +181,109 @@ footer{
     width: 100%;
     margin: 0;
 }
+
+
+/*===============================
+    Medeum device Responsive
+================================= */
+@media screen and (min-width: 576px) and (max-width: 992px){
+    .container{
+        padding: 50px;
+    }
+    /* Hero section style  */
+    .hero .hero-info{
+        width: 70%;
+    }
+    .hero .hero-img{
+        width: 30%;
+        background-position: left top;
+    }
+    .hero .hero-img img{
+        width: 70%;
+    }
+    /* Collections section style  */
+    .products{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/*===============================
+    Small device Responsive
+================================= */
+@media screen and (max-width: 577px){
+    .container{
+        padding: 10px;
+    }
+    /* mobile header style  */
+    .mobile-nav{
+        display: block;
+        width: 20%;
+    }
+    header .mobile-nav:hover .mobile-menu{
+        display: block;
+    }
+    .logo{
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .header-icons{
+        width: 20%;
+    }
+    header .header-icons i{
+        padding: 10px;
+    }
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #ffffff;
+        width: 70%;
+        height: 100vh;
+        position: absolute;
+        left: 0;
+    }
+    .mobile-nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    header ul li{
+        margin-bottom: 30px;
+    }
+    .navigation{
+        display: none;
+    }
+    /* hero section style  */
+    .hero{
+        flex-direction: column-reverse;
+    }
+    .hero>div{
+        width: 100%;
+    }
+    .hero-title{
+        font-size: 45px;
+    }
+    /* .promoter section style  */
+    .promoter{
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    /* collections section style  */
+    .products{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* pre-footer section style  */
+    .pre-footer{
+        flex-direction: column-reverse;
+        row-gap: 50px;
+    }
+}
+
